@@ -1,5 +1,5 @@
 
-import { ArrowRight, Brain, Code, Sparkles } from 'lucide-react';
+import { ArrowRight, Brain, Code, Sparkles, Wifi } from 'lucide-react';
 import Button from './ui-custom/Button';
 import { cn } from '@/lib/utils';
 
@@ -18,18 +18,18 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-secondary border border-border mb-6 opacity-0 animate-fade-in">
             <Sparkles size={14} className="mr-2 text-primary" />
-            <span className="text-sm font-medium">Redefining AI Solutions</span>
+            <span className="text-sm font-medium">Redefining AI & IoT Solutions</span>
           </div>
           
           {/* Headline */}
           <h1 className="mb-6 opacity-0 animate-fade-in animate-delay-100 text-balance">
             <span className="block">Transform Your Business with</span>
-            <span className="text-primary">Intelligent AI Workflows</span>
+            <span className="text-primary">Intelligent AI & IoT Workflows</span>
           </h1>
           
           {/* Description */}
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto opacity-0 animate-fade-in animate-delay-200 text-balance">
-            We combine cutting-edge AI technologies with expert consultation to create powerful workflow solutions that drive innovation and efficiency.
+            We combine cutting-edge AI technologies with IoT integration to create powerful automation solutions that drive innovation and efficiency in the physical and digital world.
           </p>
           
           {/* CTA Buttons */}
@@ -44,9 +44,10 @@ const Hero = () => {
           </div>
           
           {/* Features Pills */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto opacity-0 animate-fade-in animate-delay-400">
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 max-w-3xl mx-auto opacity-0 animate-fade-in animate-delay-400">
             {[
               { icon: Brain, label: "AI Workflow Automation" },
+              { icon: Wifi, label: "IoT Integration" },
               { icon: Code, label: "Custom Software Development" },
               { icon: Sparkles, label: "Strategic AI Consultation" }
             ].map((feature, index) => (
