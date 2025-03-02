@@ -1,5 +1,5 @@
 
-import { Brain, Code, Sparkles, Workflow, Server, Cpu } from 'lucide-react';
+import { Brain, Code, Sparkles, Workflow, Server, Cpu, Wifi } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Button from './ui-custom/Button';
 
@@ -14,6 +14,12 @@ const features = [
     icon: Brain,
     title: "AI Strategy Consultation",
     description: "Gain expert insights on implementing AI in your business to drive innovation and stay ahead of competition.",
+    className: "sm:col-span-2 md:col-span-1"
+  },
+  {
+    icon: Wifi,
+    title: "IoT Integration",
+    description: "Connect physical devices to digital workflows with our IoT solutions for real-time monitoring and automation.",
     className: "sm:col-span-2 md:col-span-1"
   },
   {

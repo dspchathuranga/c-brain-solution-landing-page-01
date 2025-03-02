@@ -156,6 +156,11 @@
   .animate-delay-500 {
     animation-delay: 500ms;
   }
+
+  /* Process data-animation-delay attribute */
+  [data-animation-delay] {
+    animation-delay: var(--animation-delay);
+  }
 }
 
 /* Add Inter font */

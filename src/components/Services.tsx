@@ -1,5 +1,5 @@
 
-import { Brain, Code, Users, ArrowRight, Server, LineChart, Shield, Globe, Settings } from 'lucide-react';
+import { Brain, Code, Users, ArrowRight, Server, LineChart, Shield, Globe, Settings, Wifi } from 'lucide-react';
 import { Card, CardContent, CardFooter, CardHeader } from './ui-custom/Card';
 import Button from './ui-custom/Button';
 import { cn } from '@/lib/utils';
@@ -9,6 +9,12 @@ const services = [
     icon: Brain,
     title: "AI Workflow Automation",
     description: "Streamline complex business processes with intelligent automation that adapts to your organization's needs.",
+    link: "#"
+  },
+  {
+    icon: Wifi,
+    title: "IoT Solutions",
+    description: "Connect and automate physical devices with smart IoT systems powered by AI for real-time monitoring and control.",
     link: "#"
   },
   {
@@ -64,14 +70,14 @@ const Services = () => {
             Our Services
           </h4>
           <h2 className="mb-6 opacity-0 animate-fade-in animate-delay-100">
-            Comprehensive AI & Software Solutions
+            Comprehensive AI, IoT & Software Solutions
           </h2>
           <p className="text-muted-foreground opacity-0 animate-fade-in animate-delay-200">
-            We offer a full spectrum of services to help businesses harness the power of artificial intelligence and custom software development.
+            We offer a full spectrum of services to help businesses harness the power of artificial intelligence, IoT connectivity, and custom software development.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {services.map((service, index) => (
             <Card 
               key={index} 
@@ -79,7 +85,8 @@ const Services = () => {
               className={cn(
                 "opacity-0 animate-fade-in transition-all duration-300 hover:shadow-md hover:translate-y-[-4px] group"
               )}
-              style={{ animationDelay: `${(index * 100) + 300}ms` }}
+              // Using data-animation-delay attribute instead of style for animation delay
+              data-animation-delay={`${(index * 100) + 300}ms`}
             >
               <CardHeader>
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
@@ -105,7 +112,7 @@ const Services = () => {
 
         <div className="text-center opacity-0 animate-fade-in animate-delay-500">
           <p className="text-muted-foreground max-w-2xl mx-auto mb-6">
-            Looking for a customized solution that's not listed here? We specialize in creating bespoke AI solutions tailored to your unique business needs.
+            Looking for a customized solution that's not listed here? We specialize in creating bespoke AI and IoT solutions tailored to your unique business needs.
           </p>
           <Button size="lg">
             Request Custom Solution
