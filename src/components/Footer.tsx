@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           <div className="lg:col-span-2">
             <a href="#" className="font-semibold text-2xl block mb-4">
-              NexusAI
+              C Brain Solution
             </a>
             <p className="text-muted-foreground mb-6 max-w-md">
               Transforming businesses through intelligent AI workflows, expert consultation, and innovative software solutions.
@@ -78,7 +78,7 @@ const Footer = () => {
         
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © {currentYear} NexusAI. All rights reserved.
+            © {currentYear} C Brain Solution. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors duration-200 text-sm">

@@ -38,7 +38,7 @@ const Navbar = () => {
     >
       <div className="container-custom flex justify-between items-center py-4">
         <a href="#" className="font-semibold text-xl">
-          NexusAI
+          C Brain Solution
         </a>
 
         {/* Desktop Navigation */}
